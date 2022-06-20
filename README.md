@@ -1,4 +1,4 @@
-# SpeechRecognittionBackend
+# SpeechRecognitionBackend
 
 Backend server for SmartRoomSimulator. Developed with Django Rest Framework
 
