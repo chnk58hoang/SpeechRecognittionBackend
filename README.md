@@ -1,8 +1,19 @@
 # SpeechRecognitionBackend
 
-Backend server for SmartRoomSimulator. Developed with Django Rest Framework. Speech Recognition model is developed with TensorFlow.
+Backend server for SmartRoomSimulator. Developed with Django Rest Framework. Speech Recognition model was developed with TensorFlow.
 
 # Requirements
+
+If your device supports NVIDIA GPU:
+
+```bash
+pip install tensorflow
+pip install tensorflow_text
+pip install django
+pip install djangorestframework
+pip install django-cors-headers
+```
+Otherwise
 
 ```bash
 pip install tensorflow_cpu
@@ -10,12 +21,12 @@ pip install tensorflow_text
 pip install django
 pip install djangorestframework
 pip install django-cors-headers
-pip install librosa
 ```
+
 
 # Load model from checkpoints
 
-Our model was trained with GPU from Kaggle. The checkpoints were saved in /Speech/model_checkpoint and loaded for prediction task.
+Our model was trained with GPU from Kaggle. Checkpoints were saved in /Speech/model_checkpoint and loaded for prediction task.
 ![image](https://user-images.githubusercontent.com/71833423/174621726-8ea5e631-c1e7-452f-bdec-7d0813fe1c7f.png)
 
 # Prediction task
