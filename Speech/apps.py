@@ -1,7 +1,9 @@
 from django.apps import AppConfig
 import tensorflow as tf
 import tensorflow_text as tftext
+import os
 
+os.environ['CUDA_VISIBLE_DEVICES'] = "-1"
 
 def CTCLoss(y_true, y_pred):
     # Compute the training-time loss value
